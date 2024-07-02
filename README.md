@@ -14,5 +14,7 @@ This project implements a scalable ETL pipeline using the Airbnb New York City d
 
 1. Clone the repository:
 
-git clone https://github.com/GauravT19/ETL_pipeline.git
-cd airbnb_etl_project
+```sh
+git clone origin https://github.com/GauravT19/ETL_pipeline
+cd ETL_pipeline
+>>>>>>> 29194180a9daaffb7e5acdd95f1c7eaf32093425
