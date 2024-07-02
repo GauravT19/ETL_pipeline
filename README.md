@@ -17,4 +17,3 @@ This project implements a scalable ETL pipeline using the Airbnb New York City d
 ```sh
 git clone origin https://github.com/GauravT19/ETL_pipeline
 cd ETL_pipeline
->>>>>>> 29194180a9daaffb7e5acdd95f1c7eaf32093425
