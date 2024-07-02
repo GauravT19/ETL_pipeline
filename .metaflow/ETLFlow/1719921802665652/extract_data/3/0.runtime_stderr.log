@@ -1,0 +1,30 @@
+[MFLOG|0|2024-07-02T12:03:24.929163Z|runtime|ce69fdd3-7941-4d4f-84d9-c1141edf4d7b]<flow ETLFlow step extract_data> failed:
+[MFLOG|0|2024-07-02T12:03:24.935797Z|runtime|aebecfcf-5732-4f07-9dbb-cc6473bb31e4]    Internal error
+[MFLOG|0|2024-07-02T12:03:24.939842Z|runtime|dcd410b7-f896-4ed9-b2c7-1d3bfed25666]Traceback (most recent call last):
+[MFLOG|0|2024-07-02T12:03:24.939949Z|runtime|81017f94-811e-4816-b3e4-7a59380cb2bc]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/cli.py", line 1123, in main
+[MFLOG|0|2024-07-02T12:03:24.940015Z|runtime|00ebb7af-c352-4692-8a5a-b8fcb605251a]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-07-02T12:03:24.940069Z|runtime|56cb81c3-d355-4884-8b9d-3fb82e76ba98]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-07-02T12:03:24.940123Z|runtime|b1a72733-93f7-41c8-81b5-c037d3cd5e2a]    return func(args, kwargs)
+[MFLOG|0|2024-07-02T12:03:25.026592Z|runtime|d1825cd8-fb34-467b-90d2-1a9f19023d24]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-07-02T12:03:25.026789Z|runtime|53e6ecab-aa22-422f-85bb-df5a002f58f0]    return self.main(args, kwargs)
+[MFLOG|0|2024-07-02T12:03:25.026849Z|runtime|6bea9263-93d5-445a-b623-51c8934b08c0]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-07-02T12:03:25.026896Z|runtime|e36ab90e-fcb1-41bc-867b-b63d3f51c0f3]    rv = self.invoke(ctx)
+[MFLOG|0|2024-07-02T12:03:25.026940Z|runtime|52eb5834-121f-491a-85c1-b4782bbd46d8]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-07-02T12:03:25.026984Z|runtime|14e94132-e14a-4ca8-b2f7-a49b6d1a1cec]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-07-02T12:03:25.027025Z|runtime|e2d80360-d00f-42a8-8089-1859dcfc9590]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-07-02T12:03:25.027068Z|runtime|f0b5ba4a-770a-40bb-bdd9-2ef9d2004330]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-07-02T12:03:25.027110Z|runtime|886bf295-96a8-4d41-a3bd-05d2b7c3df16]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-07-02T12:03:25.027157Z|runtime|b80be80b-4710-4b8f-9adc-0e44f969cc9b]    return callback(args, kwargs)
+[MFLOG|0|2024-07-02T12:03:25.027198Z|runtime|5f3ced3f-5935-4b5e-8a55-f3a6a268d09f]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-07-02T12:03:25.027240Z|runtime|04d64a42-7a23-4787-803d-cb59d16c6c49]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-07-02T12:03:25.027282Z|runtime|6deddd64-1a48-49bb-b53d-5411b998cb94]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/cli.py", line 467, in step
+[MFLOG|0|2024-07-02T12:03:25.027324Z|runtime|057add6a-756e-42e2-a085-1903e6019d37]    task.run_step(
+[MFLOG|0|2024-07-02T12:03:25.027365Z|runtime|de8692b8-ceda-48fe-8e61-1a5dfc530202]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/task.py", line 608, in run_step
+[MFLOG|0|2024-07-02T12:03:25.027405Z|runtime|e23e0b83-f9f5-4951-aa45-270dcc2916a6]    self._exec_step_function(step_func)
+[MFLOG|0|2024-07-02T12:03:25.027457Z|runtime|da32a307-3c71-47ab-98ae-ac48f2fb6fbd]  File "/Users/gaurav/Developer/ETL pipeline/env/lib/python3.9/site-packages/metaflow/task.py", line 59, in _exec_step_function
+[MFLOG|0|2024-07-02T12:03:25.027499Z|runtime|0de867c8-659a-4c59-8cc6-e361fa74af27]    step_function()
+[MFLOG|0|2024-07-02T12:03:25.027541Z|runtime|0bf8b26e-9373-477d-9f14-5cc2358a3052]  File "/Users/gaurav/Developer/ETL pipeline/scripts/etl_flow.py", line 29, in extract_data
+[MFLOG|0|2024-07-02T12:03:25.027582Z|runtime|9b84cde9-91bf-4c8d-a374-8fc9a0915f5d]    engine = create_engine(f'postgresql://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["database"]}')
+[MFLOG|0|2024-07-02T12:03:25.027624Z|runtime|e623a562-286b-43f7-a4ac-04a8ede5e38b]NameError: name 'db_params' is not defined
+[MFLOG|0|2024-07-02T12:03:25.027669Z|runtime|5116a061-0ee0-4944-8593-eedd4939e0ea]
+[MFLOG|0|2024-07-02T12:03:25.028153Z|runtime|55b02e74-db19-4570-8bbf-06ee35fc0b89]Task failed.
